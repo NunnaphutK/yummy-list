@@ -79,7 +79,7 @@ function App() {
           borderRadius: 'sm',
           boxShadow: 'md',
         }}>
-          {error.length > 0 && (
+          {error?.length > 0 && (
             <Snackbar
               autoHideDuration={5000}
               variant='soft'
