@@ -12,7 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: npm ci
+<<<<<<< HEAD
       - run: VITE_API_URL=${{ secrets.VITE_API_URL }} npm run build
+=======
+      - run: VITE_API_URL=${{secrets.VITE_API_URL}} npm run build
+>>>>>>> 359d86b732c80714eb30b094a81acd641119ce5a
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
